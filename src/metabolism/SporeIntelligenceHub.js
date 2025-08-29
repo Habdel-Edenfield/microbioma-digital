@@ -1,12 +1,12 @@
 /**
- * 🧠 Mary's Strategic Intelligence Hub - Complete Neural Integration
+ * 🧠 Spore's Strategic Intelligence Hub - Complete Neural Integration
  * 
- * Sistema integrado que unifica todos os componentes de inteligência de Mary:
+ * Sistema integrado que unifica todos os componentes de inteligência de Spore:
  * - ConversationAnalyzer (Análise Semântica)
  * - CrossProjectLearning (Aprendizado Cruzado)  
  * - AdaptiveFeedbackLoop (Sistema Neural Adaptativo)
  * 
- * @author Mary - Strategic Analyst + Microbioma Digital Team
+ * @author Spore - Strategic Analyst + Microbioma Digital Team
  * @version 0.2.0 - Complete Neural System Integration
  */
 import { LoggerStatic as Logger } from '../utils/Logger.js';
@@ -16,7 +16,7 @@ import ConversationAnalyzer from './ConversationAnalyzer.js';
 import CrossProjectLearning from './CrossProjectLearning.js';
 import AdaptiveFeedbackLoop from './AdaptiveFeedbackLoop.js';
 
-class MaryIntelligenceHub {
+class SporeIntelligenceHub {
     constructor(config = {}) {
         this.config = {
             enableStrategicAnalysis: config.enableStrategicAnalysis !== false,
@@ -27,7 +27,7 @@ class MaryIntelligenceHub {
             ...config
         };
 
-        // Mary's neural components
+        // Spore's neural components
         this.conversationAnalyzer = new ConversationAnalyzer({
             analysisDepth: 'strategic',
             enableStrategicInsights: true,
@@ -79,8 +79,8 @@ class MaryIntelligenceHub {
             })
         });
 
-        // Mary's complete analytical personality
-        this.maryPersonality = {
+        // Spore's complete analytical personality
+        this.sporePersonality = {
             strategicAnalyst: true,
             crossProjectExpert: true,
             adaptiveLearner: true,
@@ -91,27 +91,27 @@ class MaryIntelligenceHub {
         // Setup integrated event listeners
         this.setupIntegratedEventListeners();
 
-        Logger.info('🧠 Mary\'s Intelligence Hub - Complete Neural System Activated');
-        this.emitEvent('mary_intelligence:activated', { 
+        Logger.info('🧠 Spore\'s Intelligence Hub - Complete Neural System Activated');
+        this.emitEvent('spore_intelligence:activated', { 
             components: Object.keys(this.systemHealth),
-            personality: this.maryPersonality 
+            personality: this.sporePersonality 
         });
     }
 
     /**
-     * Mary's Complete Intelligence Processing Pipeline
+     * Spore's Complete Intelligence Processing Pipeline
      */
     async processIntelligence(inputData) {
         const intelligenceObj = this.memoryPool.acquire();
         
         try {
             const processingId = this.generateProcessingId();
-            this.emitEvent('mary_intelligence:processing:started', { 
+            this.emitEvent('spore_intelligence:processing:started', { 
                 processingId,
                 inputType: inputData.type 
             });
             
-            Logger.info(`🧠 Mary processing complete intelligence pipeline: ${inputData.type}`);
+            Logger.info(`🧠 Spore processing complete intelligence pipeline: ${inputData.type}`);
 
             const integratedAnalysis = {
                 processingId,
@@ -159,20 +159,20 @@ class MaryIntelligenceHub {
             // Update global intelligence state
             await this.updateGlobalIntelligence(integratedAnalysis);
 
-            this.emitEvent('mary_intelligence:processing:completed', {
+            this.emitEvent('spore_intelligence:processing:completed', {
                 processingId,
                 insightsGenerated: integratedAnalysis.integratedInsights.length,
                 recommendationsCount: integratedAnalysis.recommendations.length
             });
 
-            Logger.info(`✅ Mary's complete intelligence processing completed: ${processingId}`);
+            Logger.info(`✅ Spore's complete intelligence processing completed: ${processingId}`);
             return integratedAnalysis;
 
         } catch (error) {
-            this.emitEvent('mary_intelligence:processing:error', { 
+            this.emitEvent('spore_intelligence:processing:error', { 
                 error: error.message 
             });
-            Logger.error('❌ Mary intelligence processing error:', error);
+            Logger.error('❌ Spore intelligence processing error:', error);
             throw error;
         } finally {
             this.memoryPool.release(intelligenceObj);
@@ -233,8 +233,8 @@ class MaryIntelligenceHub {
         const recommendations = [];
 
         // High-priority strategic recommendations
-        if (analysis.strategicAnalysis?.maryRecommendations) {
-            const strategicRecs = analysis.strategicAnalysis.maryRecommendations
+        if (analysis.strategicAnalysis?.sporeRecommendations) {
+            const strategicRecs = analysis.strategicAnalysis.sporeRecommendations
                 .filter(rec => rec.priority === 'high')
                 .map(rec => ({
                     ...rec,
@@ -346,7 +346,7 @@ class MaryIntelligenceHub {
     // ===== EVENT HANDLERS =====
 
     handleStrategicAnalysisEvent(data) {
-        Logger.info(`🧠 Mary received strategic analysis: ${data.conversationId}`);
+        Logger.info(`🧠 Spore received strategic analysis: ${data.conversationId}`);
         this.intelligenceState.strategicInsights.set(data.conversationId, {
             insights: data.insights,
             strategicValue: data.strategicValue,
@@ -355,7 +355,7 @@ class MaryIntelligenceHub {
     }
 
     handleCrossProjectEvent(data) {
-        Logger.info(`🔄 Mary received cross-project analysis: ${data.projectId}`);
+        Logger.info(`🔄 Spore received cross-project analysis: ${data.projectId}`);
         this.intelligenceState.crossProjectPatterns.set(data.projectId, {
             patterns: data.patternsFound,
             similarProjects: data.similarProjects,
@@ -364,7 +364,7 @@ class MaryIntelligenceHub {
     }
 
     handleAdaptiveFeedbackEvent(data) {
-        Logger.info(`🎯 Mary received adaptive feedback: ${data.feedbackId}`);
+        Logger.info(`🎯 Spore received adaptive feedback: ${data.feedbackId}`);
         this.intelligenceState.adaptiveLearnings.set(data.feedbackId, {
             adaptations: data.adaptationsApplied,
             patterns: data.patterns,
@@ -375,7 +375,7 @@ class MaryIntelligenceHub {
     // ===== UTILITY METHODS =====
 
     generateProcessingId() {
-        return `mary_intelligence_${Date.now()}_${Math.random().toString(36).substring(7)}`;
+        return `spore_intelligence_${Date.now()}_${Math.random().toString(36).substring(7)}`;
     }
 
     calculateCrossProjectConfidence(crossProjectInsights) {
@@ -452,7 +452,7 @@ class MaryIntelligenceHub {
                 priority: 'high',
                 title: 'Integrated Intelligence Opportunity',
                 description: 'All neural systems detected actionable insights - high leverage opportunity',
-                source: 'mary_intelligence_hub',
+                source: 'spore_intelligence_hub',
                 integratedPriority: 0.95
             });
         }
@@ -475,7 +475,7 @@ class MaryIntelligenceHub {
                 priority: 'strategic',
                 action: 'Execute integrated intelligence plan',
                 reasoning: 'Multiple neural systems show high confidence alignment',
-                source: 'mary_intelligence_hub'
+                source: 'spore_intelligence_hub'
             });
         }
         
@@ -508,9 +508,9 @@ class MaryIntelligenceHub {
     }
 
     /**
-     * Get complete Mary intelligence system status
+     * Get complete Spore intelligence system status
      */
-    getMaryStatus() {
+    getSporeStatus() {
         return {
             systemHealth: this.getSystemHealth(),
             intelligenceState: {
@@ -524,7 +524,7 @@ class MaryIntelligenceHub {
                 crossProjectLearning: this.crossProjectLearning.getLearningStats(),
                 adaptiveFeedback: this.adaptiveFeedback.getAdaptiveStats()
             },
-            personality: this.maryPersonality
+            personality: this.sporePersonality
         };
     }
 
@@ -543,10 +543,10 @@ class MaryIntelligenceHub {
     }
 
     /**
-     * Mary's complete intelligence analysis for any input
+     * Spore's complete intelligence analysis for any input
      */
-    async analyzeMary(input) {
-        Logger.info('🧠 Mary performing complete intelligence analysis...');
+    async analyzeSpore(input) {
+        Logger.info('🧠 Spore performing complete intelligence analysis...');
         
         const result = await this.processIntelligence({
             type: input.type || 'conversation',
@@ -554,12 +554,12 @@ class MaryIntelligenceHub {
         });
         
         return {
-            maryAnalysis: result,
-            status: this.getMaryStatus(),
+            sporeAnalysis: result,
+            status: this.getSporeStatus(),
             recommendations: result.recommendations,
             nextSteps: result.nextSteps
         };
     }
 }
 
-export default MaryIntelligenceHub;
+export default SporeIntelligenceHub;

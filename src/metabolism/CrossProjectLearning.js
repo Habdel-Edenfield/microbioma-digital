@@ -1,10 +1,10 @@
 /**
- * 🧠 CrossProjectLearning - Mary's Cross-Project Intelligence Engine
+ * 🧠 CrossProjectLearning - Spore's Cross-Project Intelligence Engine
  * 
  * Sistema de aprendizado cruzado que extrai insights de múltiplos projetos
  * Implementa capacidades de meta-aprendizagem e transferência de conhecimento
  * 
- * @author Mary - Strategic Analyst + Microbioma Digital Team
+ * @author Spore - Strategic Analyst + Microbioma Digital Team
  * @version 0.2.0 - Cross-Project Evolution
  */
 import { LoggerStatic as Logger } from '../utils/Logger.js';
@@ -48,7 +48,7 @@ class CrossProjectLearning {
             })
         });
 
-        // Mary's cross-project analytical traits
+        // Spore's cross-project analytical traits
         this.analyticalMode = {
             metaLearning: true,
             patternAbstraction: true,
@@ -56,19 +56,19 @@ class CrossProjectLearning {
             evolutiveLearning: true
         };
 
-        Logger.info('🧠 Mary\'s CrossProjectLearning Engine - Meta-Intelligence Activated');
+        Logger.info('🧠 Spore\'s CrossProjectLearning Engine - Meta-Intelligence Activated');
         this.emitEvent('cross_learning:initialized', { config: this.config });
     }
 
     /**
-     * Mary's Core Cross-Project Analysis
+     * Spore's Core Cross-Project Analysis
      */
     async analyzeProjectPatterns(projectData) {
         const analysisObj = this.memoryPool.acquire();
         
         try {
             this.emitEvent('cross_learning:analysis:started', { projectId: projectData.id });
-            Logger.info(`🔍 Mary cross-analyzing project: ${projectData.id}`);
+            Logger.info(`🔍 Spore cross-analyzing project: ${projectData.id}`);
 
             const crossAnalysis = {
                 projectId: projectData.id,
@@ -92,7 +92,7 @@ class CrossProjectLearning {
                 similarProjects: crossAnalysis.similarities.length
             });
 
-            Logger.info(`✅ Mary's cross-project analysis completed: ${projectData.id}`);
+            Logger.info(`✅ Spore's cross-project analysis completed: ${projectData.id}`);
             return crossAnalysis;
 
         } catch (error) {

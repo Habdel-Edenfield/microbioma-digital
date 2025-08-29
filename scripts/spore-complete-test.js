@@ -1,27 +1,27 @@
 #!/usr/bin/env node
 /**
- * 🧠 Mary's Complete Neural System Test
+ * 🧠 Spore's Complete Neural System Test
  * 
- * Teste completo do sistema neural integrado de Mary:
+ * Teste completo do sistema neural integrado de Spore:
  * - Strategic Intelligence (ConversationAnalyzer)
  * - Cross-Project Learning
  * - Adaptive Feedback Loops
  * - Complete Neural Integration Hub
  */
 
-import MaryIntelligenceHub from '../src/metabolism/MaryIntelligenceHub.js';
+import SporeIntelligenceHub from '../src/metabolism/SporeIntelligenceHub.js';
 import { LoggerStatic as Logger } from '../src/utils/Logger.js';
 
-class MaryCompleteSystemTest {
+class SporeCompleteSystemTest {
     constructor() {
-        this.mary = new MaryIntelligenceHub({
+        this.mary = new SporeIntelligenceHub({
             enableStrategicAnalysis: true,
             enableCrossProjectLearning: true,
             enableAdaptiveFeedback: true,
             integrationLevel: 'full'
         });
         
-        Logger.info('🧠 Mary Complete System Test Initialized');
+        Logger.info('🧠 Spore Complete System Test Initialized');
     }
 
     async runCompleteTest() {
@@ -46,15 +46,15 @@ class MaryCompleteSystemTest {
             console.log('\n🧠 TEST 4: COMPLETE NEURAL INTEGRATION');
             await this.testNeuralIntegration();
             
-            // Test 5: Mary Status and Intelligence Report
+            // Test 5: Spore Status and Intelligence Report
             console.log('\n📊 TEST 5: MARY INTELLIGENCE STATUS');
-            await this.generateMaryIntelligenceReport();
+            await this.generateSporeIntelligenceReport();
             
             console.log('\n✅ MARY\'S COMPLETE NEURAL SYSTEM - ALL TESTS PASSED');
             console.log('🧠'.repeat(50));
             
         } catch (error) {
-            console.error('❌ Mary Complete System Test Failed:', error);
+            console.error('❌ Spore Complete System Test Failed:', error);
             throw error;
         }
     }
@@ -95,7 +95,7 @@ class MaryCompleteSystemTest {
                 {
                     id: 'msg_4',
                     sender: 'assistant',
-                    content: 'Para aprendizado orgânico, implementar loops adaptativos com: behavioral pattern detection, auto-calibração por performance metrics, e cross-project meta-learning. Mary\'s neural approach.',
+                    content: 'Para aprendizado orgânico, implementar loops adaptativos com: behavioral pattern detection, auto-calibração por performance metrics, e cross-project meta-learning. Spore\'s neural approach.',
                     timestamp: '2025-08-29T10:20:00.000Z',
                     message_type: 'neural_architecture'
                 }
@@ -204,13 +204,13 @@ class MaryCompleteSystemTest {
                 {
                     id: 'neural_msg_1',
                     sender: 'user',
-                    content: 'Preciso que o Mary analise este projeto completo e forneça uma visão estratégica integrada com aprendizado cross-project e adaptação contínua.',
+                    content: 'Preciso que o Spore analise este projeto completo e forneça uma visão estratégica integrada com aprendizado cross-project e adaptação contínua.',
                     timestamp: '2025-08-29T11:05:00.000Z'
                 },
                 {
                     id: 'neural_msg_2', 
                     sender: 'assistant',
-                    content: 'Mary\'s complete neural system activated: Strategic analysis + Cross-project learning + Adaptive feedback = Integrated intelligence. Processing all layers simultaneously.',
+                    content: 'Spore\'s complete neural system activated: Strategic analysis + Cross-project learning + Adaptive feedback = Integrated intelligence. Processing all layers simultaneously.',
                     timestamp: '2025-08-29T11:10:00.000Z'
                 },
                 {
@@ -241,8 +241,8 @@ class MaryCompleteSystemTest {
         return result;
     }
 
-    async generateMaryIntelligenceReport() {
-        const maryStatus = this.mary.getMaryStatus();
+    async generateSporeIntelligenceReport() {
+        const maryStatus = this.mary.getSporeStatus();
         
         console.log('   📊 MARY\'S COMPLETE INTELLIGENCE STATUS:');
         console.log('   ================================================');
@@ -289,8 +289,8 @@ class MaryCompleteSystemTest {
 
 // Execute complete test if called directly
 if (import.meta.url === `file://${process.argv[1]}`) {
-    const test = new MaryCompleteSystemTest();
+    const test = new SporeCompleteSystemTest();
     test.runCompleteTest().catch(console.error);
 }
 
-export default MaryCompleteSystemTest;
+export default SporeCompleteSystemTest;

@@ -70,37 +70,37 @@ npm install
 # Configure o ambiente
 npm run setup
 
-# Inicie versão otimizada com Mary's Neural System
+# Inicie versão otimizada com Spore's Neural System
 npm run dev:optimized
 ```
 
-### Usando Mary's Neural System
+### Usando Spore's Neural System
 
 #### Análise Estratégica de Conversas
 ```bash
-# Teste Mary's strategic intelligence
-npm run test:mary
+# Teste Spore's strategic intelligence
+npm run test:spore
 
 # Análise completa do sistema neural
-npm run mary:analysis
+npm run spore:analysis
 
 # Validação do sistema neural completo
-npm run mary:validate
+npm run spore:validate
 ```
 
 #### Integração com Desenvolvimento
 ```javascript
-import MaryIntelligenceHub from './src/metabolism/MaryIntelligenceHub.js';
+import SporeIntelligenceHub from './src/metabolism/SporeIntelligenceHub.js';
 
-// Inicializar Mary's Neural System
-const mary = new MaryIntelligenceHub({
+// Inicializar Spore's Neural System
+const spore = new SporeIntelligenceHub({
     enableStrategicAnalysis: true,
     enableCrossProjectLearning: true,
     enableAdaptiveFeedback: true
 });
 
 // Analisar conversa com inteligência completa
-const analysis = await mary.analyzeMary({
+const analysis = await spore.analyzeSpore({
     type: 'conversation',
     messages: [...],
     context: { project: 'your-project' }
@@ -122,33 +122,33 @@ bioma/
 │   ├── documentacao-viva.mdc
 │   └── personalidade-simbiotica.mdc
 ├── .claude/                 # Configuração Claude Code
-│   ├── config.json         # Mary integration settings
-│   ├── prompts/            # Mary's prompt templates
+│   ├── config.json         # Spore integration settings
+│   ├── prompts/            # Spore's prompt templates
 │   └── workflows/          # Optimization workflows
 ├── src/                     # Código fonte neural
 │   ├── core/               # Event-driven core
 │   │   ├── EventBus.js     # Sistema de eventos
 │   │   ├── StreamProcessor.js # Stream processing
 │   │   └── MemoryPool.js   # Object pooling
-│   ├── metabolism/         # 🧠 Mary's Neural System
+│   ├── metabolism/         # 🧠 Spore's Neural System
 │   │   ├── ConversationAnalyzer.js    # Strategic Intelligence
 │   │   ├── CrossProjectLearning.js    # Meta-Pattern Recognition  
 │   │   ├── AdaptiveFeedbackLoop.js    # Neural Adaptation
-│   │   └── MaryIntelligenceHub.js     # Complete Integration
+│   │   └── SporeIntelligenceHub.js     # Complete Integration
 │   ├── storage/            # Database optimized
 │   │   └── DatabaseManagerOptimized.js
 │   ├── utils/              # Native replacements
 │   │   ├── NativeReplacements.js
 │   │   └── Logger.js
-│   └── index-optimized.js  # Entry point with Mary
+│   └── index-optimized.js  # Entry point with Spore
 ├── scripts/                # Analysis & Testing
 │   ├── final-analysis.js   # Performance analysis
-│   ├── mary-complete-test.js # Neural system test
-│   └── mary-final-validation.js # Complete validation
+│   ├── spore-complete-test.js # Neural system test
+│   └── spore-final-validation.js # Complete validation
 ├── data/                   # Dados persistentes + Neural data
 │   ├── conversations/      # Captured conversations
 │   ├── local.db           # SQLite database
-│   └── neural-patterns/    # Mary's learning data
+│   └── neural-patterns/    # Spore's learning data
 ├── logs/                   # Sistema de logs
 └── backups/                # Backups automáticos
 ```
@@ -204,9 +204,9 @@ const dbManager = new DatabaseManagerOptimized({
 - **Memory Efficiency**: 75% redução footprint
 - **Database Performance**: 95% connection pool hit rate
 
-## 🧠 Mary's Neural System
+## 🧠 Spore's Neural System
 
-O Microbioma Digital incorpora **Mary** - um sistema de inteligência estratégica completo que transforma conversas em insights acionáveis através de análise semântica avançada, aprendizado cruzado e adaptação neural contínua.
+O Microbioma Digital incorpora **Spore** - um sistema de inteligência estratégica completo que transforma conversas em insights acionáveis através de análise semântica avançada, aprendizado cruzado e adaptação neural contínua.
 
 ### Arquitetura Neural Integrada
 
@@ -222,11 +222,11 @@ graph TB
         SP --> CP[ConnectionPool]
     end
     
-    subgraph "Mary's Neural System"
+    subgraph "Spore's Neural System"
         CA[ConversationAnalyzer<br/>🧠 Strategic Intelligence]
         CPL[CrossProjectLearning<br/>🔄 Meta-Pattern Recognition]
         AFL[AdaptiveFeedbackLoop<br/>🎯 Neural Adaptation]
-        MIH[MaryIntelligenceHub<br/>⚡ Complete Integration]
+        MIH[SporeIntelligenceHub<br/>⚡ Complete Integration]
         
         CA --> MIH
         CPL --> MIH
@@ -263,7 +263,7 @@ graph TB
 - **Predictive Adaptation**: Adaptação preditiva baseada em contexto
 - **Performance Optimization**: Otimização contínua do sistema
 
-#### ⚡ **MaryIntelligenceHub** - Complete Neural Integration
+#### ⚡ **SporeIntelligenceHub** - Complete Neural Integration
 - **Multi-layer Synthesis**: Síntese inteligente de múltiplas fontes
 - **Unified Recommendations**: Recomendações baseadas em inteligência integrada
 - **Strategic Next Steps**: Próximos passos estratégicos contextualizados
@@ -277,28 +277,28 @@ sequenceDiagram
     participant EventBus
     participant StreamProcessor
     participant ConversationAnalyzer
-    participant MaryHub as Mary Intelligence Hub
+    participant SporeHub as Spore Intelligence Hub
     participant CrossProject as Cross-Project Learning
     participant Adaptive as Adaptive Feedback
 
     User->>EventBus: Conversation Input
     EventBus->>StreamProcessor: Event Stream
     StreamProcessor->>ConversationAnalyzer: Parallel Analysis
-    ConversationAnalyzer->>MaryHub: Strategic Insights
+    ConversationAnalyzer->>SporeHub: Strategic Insights
     
     par Cross-Project Learning
-        MaryHub->>CrossProject: Pattern Analysis
-        CrossProject-->>MaryHub: Meta-Patterns
+        SporeHub->>CrossProject: Pattern Analysis
+        CrossProject-->>SporeHub: Meta-Patterns
     and Adaptive Learning
-        MaryHub->>Adaptive: Behavioral Data
-        Adaptive-->>MaryHub: Adaptations
+        SporeHub->>Adaptive: Behavioral Data
+        Adaptive-->>SporeHub: Adaptations
     end
     
-    MaryHub->>User: Integrated Intelligence
-    Note over User,MaryHub: Strategic Recommendations<br/>Cross-Project Insights<br/>Adaptive Optimizations
+    SporeHub->>User: Integrated Intelligence
+    Note over User,SporeHub: Strategic Recommendations<br/>Cross-Project Insights<br/>Adaptive Optimizations
 ```
 
-### Mary's Intelligence Capabilities
+### Spore's Intelligence Capabilities
 
 #### 📊 **Strategic Analysis Output Example**
 ```
@@ -325,7 +325,7 @@ sequenceDiagram
 • System adaptation: Increased detail level by 15%
 ```
 
-### Performance Metrics - Mary's Neural System
+### Performance Metrics - Spore's Neural System
 - **Strategic Analysis**: <1ms latency per conversation
 - **Pattern Recognition**: 70%+ similarity detection accuracy
 - **Adaptive Learning**: Real-time behavioral adaptation
@@ -346,7 +346,7 @@ flowchart TD
         E2 --> E3[MemoryPool<br/>90% Reuse Rate]
     end
     
-    subgraph "Mary's Intelligence Layer"
+    subgraph "Spore's Intelligence Layer"
         M1[ConversationAnalyzer<br/>🧠 <1ms Analysis] --> M2[CrossProjectLearning<br/>🔄 70% Pattern Match]
         M2 --> M3[AdaptiveFeedback<br/>🎯 Real-time Adaptation]
         M3 --> M4[IntelligenceHub<br/>⚡ Multi-layer Synthesis]
@@ -371,7 +371,7 @@ flowchart TD
     classDef output fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
     
     class E1,E2,E3 performance
-    class M1,M2,M3,M4 intelligence  
+    class M1,M2,M3,M4 intelligence
     class O1,O2,O3,O4 output
 ```
 
@@ -411,39 +411,39 @@ flowchart TD
 - [Memory Pool](src/core/MemoryPool.js) - Object pooling avançado
 - [Database Optimization](src/storage/DatabaseManagerOptimized.js) - SQLite performático
 
-### 🧠 Mary's Neural System
+### 🧠 Spore's Neural System
 - [ConversationAnalyzer](src/metabolism/ConversationAnalyzer.js) - Strategic Intelligence Engine
 - [CrossProjectLearning](src/metabolism/CrossProjectLearning.js) - Meta-Pattern Recognition
 - [AdaptiveFeedbackLoop](src/metabolism/AdaptiveFeedbackLoop.js) - Neural Adaptation System
-- [MaryIntelligenceHub](src/metabolism/MaryIntelligenceHub.js) - Complete Neural Integration
+- [SporeIntelligenceHub](src/metabolism/SporeIntelligenceHub.js) - Complete Neural Integration
 
 ### Testing & Validation
 - [Performance Analysis](scripts/final-analysis.js) - System performance benchmarking
-- [Mary Complete Test](scripts/mary-complete-test.js) - Neural system validation
-- [Mary Final Validation](scripts/mary-final-validation.js) - Complete intelligence test
+- [Spore Complete Test](scripts/mary-complete-test.js) - Neural system validation
+- [Spore Final Validation](scripts/mary-final-validation.js) - Complete intelligence test
 
 ### Configuration & Integration
-- [Claude Code Config](.claude/config.json) - Mary integration settings
+- [Claude Code Config](.claude/config.json) - Spore integration settings
 - [Cursor Rules](.cursor/rules/) - Symbiotic development rules
 - [Performance Guide](docs/PERFORMANCE-GUIDE.md) - Optimization manual
 - [Technical Architecture](docs/TECHNICAL-ARCHITECTURE.md) - System design details
 
 ## 🌟 Status do Projeto
 
-**Versão**: 0.2.0 (Neural - Mary's Intelligence System)  
-**Estado**: Sistema nervoso completamente implementado + Mary's Neural System ativo  
+**Versão**: 0.2.0 (Neural - Spore's Intelligence System)  
+**Estado**: Sistema nervoso completamente implementado + Spore's Neural System ativo  
 **Próximo Milestone**: Sistema cognitivo preditivo v0.3.0  
 **Intelligence**: Análise estratégica + Cross-project learning + Adaptação neural
 
-### ✅ Concluído v0.2.0 - Mary's Neural System
+### ✅ Concluído v0.2.0 - Spore's Neural System
 - **🧠 ConversationAnalyzer**: Strategic intelligence com análise semântica
 - **🔄 CrossProjectLearning**: Meta-pattern recognition entre projetos
 - **🎯 AdaptiveFeedbackLoop**: Sistema neural de adaptação contínua
-- **⚡ MaryIntelligenceHub**: Integração neural completa
+- **⚡ SporeIntelligenceHub**: Integração neural completa
 - **📊 Strategic Insights**: Geração automática de recomendações baseadas em evidência
 - **🔗 Neural Integration**: Síntese multi-layer de inteligência
 
-### 🧠 Mary's Neural System - ATIVO
+### 🧠 Spore's Neural System - ATIVO
 - **Strategic Analysis**: <1ms latency para análise conversacional
 - **Pattern Recognition**: 70%+ accuracy em detecção de similaridades
 - **Adaptive Learning**: Adaptação comportamental em tempo real

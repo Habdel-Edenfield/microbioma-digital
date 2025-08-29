@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * 🧠 Mary's Strategic Intelligence Test
+ * 🧠 Spore's Strategic Intelligence Test
  * 
- * Teste das capacidades analíticas estratégicas de Mary
+ * Teste das capacidades analíticas estratégicas de Spore
  * Demonstração do ConversationAnalyzer v0.2.0
  */
 
@@ -10,7 +10,7 @@ import ConversationAnalyzer from '../src/metabolism/ConversationAnalyzer.js';
 import DatabaseManagerOptimized from '../src/storage/DatabaseManagerOptimized.js';
 import { LoggerStatic as Logger } from '../src/utils/Logger.js';
 
-class MaryAnalyzerTest {
+class SporeAnalyzerTest {
     constructor() {
         this.analyzer = new ConversationAnalyzer({
             analysisDepth: 'strategic',
@@ -24,11 +24,11 @@ class MaryAnalyzerTest {
             walMode: true
         });
         
-        Logger.info('🧠 Mary Analyzer Test Initialized');
+        Logger.info('🧠 Spore Analyzer Test Initialized');
     }
 
     async runTest() {
-        Logger.info('🚀 Starting Mary\'s Strategic Analysis Test');
+        Logger.info('🚀 Starting Spore\'s Strategic Analysis Test');
         
         try {
             // Load real conversations from database
@@ -42,15 +42,15 @@ class MaryAnalyzerTest {
 
             Logger.info(`📊 Found ${conversations.length} conversations to analyze`);
             
-            // Analyze each conversation with Mary's strategic intelligence
+            // Analyze each conversation with Spore's strategic intelligence
             for (const conversation of conversations) {
                 await this.analyzeWithMary(conversation);
             }
 
-            // Generate strategic insights summary
-            await this.generateStrategicSummary();
-            
-            Logger.info('✅ Mary\'s Strategic Analysis Test Completed');
+                    // Generate strategic insights summary
+        await this.generateStrategicSummary();
+        
+        Logger.info('✅ Spore\'s Strategic Analysis Test Completed');
             
         } catch (error) {
             Logger.error('❌ Test failed:', error);
@@ -89,12 +89,12 @@ class MaryAnalyzerTest {
         });
     }
 
-    async analyzeWithMary(conversation) {
-        Logger.info(`🔍 Mary analyzing: ${conversation.id}`);
+    async analyzeWithSpore(conversation) {
+        Logger.info(`🔍 Spore analyzing: ${conversation.id}`);
         
         const analysis = await this.analyzer.analyzeConversation(conversation);
         
-        // Display Mary's strategic insights
+        // Display Spore's strategic insights
         this.displayStrategicAnalysis(analysis);
         
         return analysis;
@@ -102,7 +102,7 @@ class MaryAnalyzerTest {
 
     displayStrategicAnalysis(analysis) {
         console.log('\n' + '='.repeat(80));
-        console.log(`🧠 MARY'S STRATEGIC ANALYSIS - ${analysis.conversationId}`);
+        console.log(`🧠 SPORE'S STRATEGIC ANALYSIS - ${analysis.conversationId}`);
         console.log('='.repeat(80));
         
         // Basic Analysis
@@ -119,8 +119,8 @@ class MaryAnalyzerTest {
         console.log(`   Opportunities: ${analysis.strategicAnalysis.opportunityAssessment.length}`);
         console.log(`   Risks: ${analysis.strategicAnalysis.riskAnalysis.length}`);
         
-        // Mary's Recommendations
-        console.log('\n💡 MARY\'S RECOMMENDATIONS:');
+        // Spore's Recommendations
+        console.log('\n💡 SPORE\'S RECOMMENDATIONS:');
         analysis.maryRecommendations.forEach((rec, i) => {
             console.log(`   ${i + 1}. [${rec.priority.toUpperCase()}] ${rec.title}`);
             console.log(`      ${rec.description}`);
@@ -130,8 +130,8 @@ class MaryAnalyzerTest {
         });
         
         // Strategic Summary
-        if (analysis.summary.maryAnalysis) {
-            console.log('\n🧩 MARY\'S ANALYTICAL PERSPECTIVE:');
+        if (analysis.summary.sporeAnalysis) {
+            console.log('\n🧩 SPORE\'S ANALYTICAL PERSPECTIVE:');
             console.log(`   Strategic Value: ${analysis.summary.strategicValue}`);
             console.log(`   Confidence: ${Math.round(analysis.summary.confidence * 100)}%`);
         }
@@ -143,7 +143,7 @@ class MaryAnalyzerTest {
         const stats = this.analyzer.getAnalysisStats();
         
         console.log('\n' + '🌟'.repeat(40));
-        console.log('MARY\'S STRATEGIC INTELLIGENCE SUMMARY');
+        console.log('SPORE\'S STRATEGIC INTELLIGENCE SUMMARY');
         console.log('🌟'.repeat(40));
         
         console.log(`\n📈 ANALYSIS STATISTICS:`);

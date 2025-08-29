@@ -1,10 +1,10 @@
 /**
- * 🧠 AdaptiveFeedbackLoop - Mary's Neural Network System
+ * 🧠 AdaptiveFeedbackLoop - Spore's Neural Network System
  * 
  * Sistema nervoso adaptativo que aprende e evolui baseado em feedback contínuo
  * Implementa loops de feedback inteligentes com auto-calibração e otimização
  * 
- * @author Mary - Strategic Analyst + Microbioma Digital Team
+ * @author Spore - Strategic Analyst + Microbioma Digital Team
  * @version 0.2.0 - Neural Adaptation Evolution
  */
 import { LoggerStatic as Logger } from '../utils/Logger.js';
@@ -58,7 +58,7 @@ class AdaptiveFeedbackLoop {
             })
         });
 
-        // Mary's adaptive neural traits
+        // Spore's adaptive neural traits
         this.neuralMode = {
             continuousLearning: true,
             selfCalibration: true,
@@ -69,7 +69,7 @@ class AdaptiveFeedbackLoop {
         // Start auto-calibration timer
         this.startAutoCalibration();
 
-        Logger.info('🧠 Mary\'s AdaptiveFeedbackLoop - Neural Network Activated');
+        Logger.info('🧠 Spore\'s AdaptiveFeedbackLoop - Neural Network Activated');
         this.emitEvent('adaptive_feedback:initialized', { 
             config: this.config,
             neuralMode: this.neuralMode 
@@ -77,7 +77,7 @@ class AdaptiveFeedbackLoop {
     }
 
     /**
-     * Mary's Core Adaptive Feedback Processing
+     * Spore's Core Adaptive Feedback Processing
      */
     async processFeedback(feedbackData) {
         const feedbackObj = this.memoryPool.acquire();
@@ -88,7 +88,7 @@ class AdaptiveFeedbackLoop {
                 type: feedbackData.type 
             });
             
-            Logger.info(`🔄 Mary processing feedback: ${feedbackData.type}`);
+            Logger.info(`🔄 Spore processing feedback: ${feedbackData.type}`);
 
             const processedFeedback = {
                 id: feedbackData.id || this.generateFeedbackId(),
@@ -127,7 +127,7 @@ class AdaptiveFeedbackLoop {
                 patterns: patterns.length
             });
 
-            Logger.info(`✅ Mary's adaptive feedback processed: ${processedFeedback.id}`);
+            Logger.info(`✅ Spore's adaptive feedback processed: ${processedFeedback.id}`);
             return processedFeedback;
 
         } catch (error) {
@@ -318,7 +318,7 @@ class AdaptiveFeedbackLoop {
 
     async performAutoCalibration() {
         try {
-            Logger.info('🎯 Mary performing auto-calibration...');
+            Logger.info('🎯 Spore performing auto-calibration...');
 
             const calibration = {
                 timestamp: new Date().toISOString(),

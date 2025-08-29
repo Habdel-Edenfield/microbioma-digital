@@ -1,5 +1,5 @@
 /**
- * Quick Mary Test - Validação rápida das capacidades de Mary
+ * Quick Spore Test - Validação rápida das capacidades de Spore
  */
 
 // Mock data para teste sem dependências externas
@@ -45,24 +45,24 @@ const mockConversation = {
 };
 
 // Simple analyzer test without external dependencies
-class QuickMaryTest {
+class QuickSporeTest {
     constructor() {
-        console.log('🧠 Mary Quick Test - Strategic Intelligence Validation');
-        console.log('=' * 60);
+        console.log('🧠 Spore Quick Test - Strategic Intelligence Validation');
+        console.log('='.repeat(60));
     }
 
     async runTest() {
         try {
             await this.analyzeConversation(mockConversation);
             this.generateInsights();
-            console.log('\n✅ Mary\'s Strategic Intelligence - VALIDATION SUCCESSFUL');
+            console.log('\n✅ Spore\'s Strategic Intelligence - VALIDATION SUCCESSFUL');
         } catch (error) {
-            console.error('❌ Mary Test Failed:', error.message);
+            console.error('❌ Spore Test Failed:', error.message);
         }
     }
 
     async analyzeConversation(conversation) {
-        console.log('\n🔍 MARY ANALYZING CONVERSATION:');
+        console.log('\n🔍 SPORE ANALYZING CONVERSATION:');
         console.log(`   ID: ${conversation.id}`);
         console.log(`   Duration: ${this.calculateDuration(conversation.start_time, conversation.end_time)}`);
         console.log(`   Messages: ${conversation.messages.length}`);
@@ -166,14 +166,14 @@ class QuickMaryTest {
     }
 
     generateInsights() {
-        console.log('\n💡 MARY\'S STRATEGIC INSIGHTS:');
+        console.log('\n💡 SPORE\'S STRATEGIC INSIGHTS:');
         console.log('   ✓ High-value technical conversation detected');
         console.log('   ✓ Multi-layer architecture discussion');
         console.log('   ✓ Performance optimization focus');
         console.log('   ✓ Advanced ML integration opportunity');
         console.log('   ✓ Strategic implementation roadmap needed');
         
-        console.log('\n🎯 MARY\'S RECOMMENDATIONS:');
+        console.log('\n🎯 SPORE\'S RECOMMENDATIONS:');
         console.log('   1. [HIGH] Prioritize event-driven architecture implementation');
         console.log('   2. [HIGH] Develop ConversationAnalyzer with ML capabilities');
         console.log('   3. [MED] Create performance benchmarking system');
@@ -188,5 +188,5 @@ class QuickMaryTest {
 }
 
 // Execute test
-const test = new QuickMaryTest();
+const test = new QuickSporeTest();
 test.runTest();

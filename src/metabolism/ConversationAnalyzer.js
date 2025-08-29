@@ -1,10 +1,10 @@
 /**
- * 🧠 ConversationAnalyzer - Mary's Strategic Intelligence Engine
+ * 🧠 ConversationAnalyzer - Spore's Strategic Intelligence Engine
  * 
  * Sistema de análise semântica avançada que transforma conversas em insights estratégicos
- * Integrado com Mary's analytical capabilities para parceria cognitiva otimizada
+ * Integrado com Spore's analytical capabilities para parceria cognitiva otimizada
  * 
- * @author Mary - Strategic Analyst + Microbioma Digital Team
+ * @author Spore - Strategic Analyst + Microbioma Digital Team
  * @version 0.2.0 - Strategic Intelligence Evolution
  */
 import { LoggerStatic as Logger } from '../utils/Logger.js';
@@ -24,7 +24,7 @@ class ConversationAnalyzer {
             ...config
         };
         
-        // Mary's Strategic Intelligence Components
+        // Spore's Strategic Intelligence Components
         this.analysisCache = new Map();
         this.patternDatabase = new Map();
         this.strategicInsights = new Map();
@@ -49,7 +49,7 @@ class ConversationAnalyzer {
             })
         });
         
-        // Mary's analytical personality traits
+        // Spore's analytical personality traits
         this.analyticalMode = {
             curiosityDriven: true,
             evidenceBased: true,
@@ -57,19 +57,19 @@ class ConversationAnalyzer {
             iterativeRefinement: true
         };
         
-        Logger.info('🧠 Mary\'s ConversationAnalyzer - Strategic Intelligence Activated');
+        Logger.info('🧠 Spore\'s ConversationAnalyzer - Strategic Intelligence Activated');
         this.emitEvent('analyzer:initialized', { config: this.config });
     }
 
     /**
-     * Mary's Strategic Conversation Analysis - Core Intelligence Engine
+     * Spore's Strategic Conversation Analysis - Core Intelligence Engine
      */
     async analyzeConversation(conversation) {
         const analysisObj = this.memoryPool.acquire();
         
         try {
             this.emitEvent('analysis:started', { conversationId: conversation.id });
-            Logger.info(`🔍 Mary analyzing conversation: ${conversation.id}`);
+            Logger.info(`🔍 Spore analyzing conversation: ${conversation.id}`);
             
             const analysis = {
                 conversationId: conversation.id,
@@ -80,10 +80,10 @@ class ConversationAnalyzer {
                 strategicAnalysis: {},
                 crossProjectInsights: {},
                 summary: {},
-                maryRecommendations: []
+                sporeRecommendations: []
             };
 
-            // Mary's Multi-Layer Strategic Analysis
+            // Spore's Multi-Layer Strategic Analysis
             analysis.metadata = await this.analyzeMetadata(conversation);
             analysis.insights = await this.analyzeContent(conversation);
             analysis.patterns = await this.detectPatterns(conversation);
@@ -94,8 +94,8 @@ class ConversationAnalyzer {
             // NEW: Cross-Project Learning Layer
             analysis.crossProjectInsights = await this.analyzeCrossProjectPatterns(conversation);
             
-            // NEW: Mary's Evidence-Based Recommendations
-            analysis.maryRecommendations = await this.generateStrategicRecommendations(analysis);
+                    // NEW: Spore's Evidence-Based Recommendations
+        analysis.sporeRecommendations = await this.generateStrategicRecommendations(analysis);
             
             // Enhanced Summary with Strategic Context
             analysis.summary = await this.generateStrategicSummary(analysis);
@@ -110,12 +110,12 @@ class ConversationAnalyzer {
                 strategicValue: analysis.strategicAnalysis.priority
             });
             
-            Logger.info(`✅ Mary's strategic analysis completed: ${conversation.id}`);
+            Logger.info(`✅ Spore's strategic analysis completed: ${conversation.id}`);
             return analysis;
             
         } catch (error) {
             this.emitEvent('analysis:error', { conversationId: conversation.id, error: error.message });
-            Logger.error('❌ Mary analysis error:', error);
+            Logger.error('❌ Spore analysis error:', error);
             throw error;
         } finally {
             this.memoryPool.release(analysisObj);
@@ -184,10 +184,10 @@ class ConversationAnalyzer {
         return summary;
     }
 
-    // ===== MARY'S STRATEGIC INTELLIGENCE METHODS =====
+    // ===== SPORE'S STRATEGIC INTELLIGENCE METHODS =====
 
     /**
-     * Mary's Strategic Analysis - Evidence-based strategic insights
+     * Spore's Strategic Analysis - Evidence-based strategic insights
      */
     async performStrategicAnalysis(conversation, basicAnalysis) {
         const strategic = {
@@ -200,7 +200,7 @@ class ConversationAnalyzer {
             strategicRecommendations: []
         };
 
-        // Mary's curiosity-driven deeper analysis
+        // Spore's curiosity-driven deeper analysis
         if (this.analyticalMode.curiosityDriven) {
             strategic.unexploredOpportunities = this.identifyUnexploredOpportunities(basicAnalysis);
             strategic.emergentPatterns = this.detectEmergentStrategicPatterns(conversation);
@@ -233,7 +233,7 @@ class ConversationAnalyzer {
     }
 
     /**
-     * Mary's Evidence-Based Strategic Recommendations
+     * Spore's Evidence-Based Strategic Recommendations
      */
     async generateStrategicRecommendations(analysis) {
         const recommendations = [];
@@ -278,7 +278,7 @@ class ConversationAnalyzer {
     }
 
     /**
-     * Enhanced Strategic Summary with Mary's analytical perspective
+     * Enhanced Strategic Summary with Spore's analytical perspective
      */
     async generateStrategicSummary(analysis) {
         const summary = {
@@ -286,12 +286,12 @@ class ConversationAnalyzer {
             keyInsights: this.extractKeyInsights(analysis),
             strategicInsights: this.extractStrategicInsights(analysis),
             
-            // Mary's strategic perspective
+            // Spore's strategic perspective
             strategicValue: analysis.strategicAnalysis.priority,
             developmentImplications: this.analyzeDevelopmentImplications(analysis),
             
             // Evidence-based recommendations
-            recommendations: analysis.maryRecommendations,
+            recommendations: analysis.sporeRecommendations,
             
             // Next steps with strategic context
             nextSteps: this.generateStrategicNextSteps(analysis),
@@ -299,8 +299,8 @@ class ConversationAnalyzer {
             // Confidence with strategic factors
             confidence: this.calculateStrategicConfidence(analysis),
             
-            // Mary's analytical summary
-            maryAnalysis: this.generateMaryAnalyticalSummary(analysis)
+                    // Spore's analytical summary
+        sporeAnalysis: this.generateSporeAnalyticalSummary(analysis)
         };
 
         return summary;
@@ -644,19 +644,19 @@ class ConversationAnalyzer {
         return Math.min(confidence, 1.0);
     }
 
-    generateMaryAnalyticalSummary(analysis) {
+    generateSporeAnalyticalSummary(analysis) {
         const summary = [];
         
-        // Mary's analytical perspective
-        summary.push('MARY\'S ANALYTICAL PERSPECTIVE:');
+        // Spore's analytical perspective
+        summary.push('SPORE\'S ANALYTICAL PERSPECTIVE:');
         summary.push(`Strategic Assessment: ${analysis.strategicAnalysis?.priority || 'pending'}`);
         
         if (analysis.insights?.technicalContent) {
             summary.push(`Technical Complexity: ${analysis.insights.technicalContent.technicalLevel}`);
         }
         
-        if (analysis.maryRecommendations?.length > 0) {
-            summary.push(`Recommendations Generated: ${analysis.maryRecommendations.length}`);
+        if (analysis.sporeRecommendations?.length > 0) {
+            summary.push(`Recommendations Generated: ${analysis.sporeRecommendations.length}`);
         }
         
         return summary.join('\n');
