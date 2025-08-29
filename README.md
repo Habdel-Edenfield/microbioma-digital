@@ -366,13 +366,11 @@ flowchart TD
     E3 --> M1
     M4 --> O1
     
-    classDef performance fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    classDef intelligence fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    classDef output fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    %% 🔵 Definição única de estilo
+    classDef default fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     
-    class E1,E2,E3 performance
-    class M1,M2,M3,M4 intelligence
-    class O1,O2,O3,O4 output
+    %% 🔵 Aplica para todos
+    class I1,I2,I3,I4,E1,E2,E3,M1,M2,M3,M4,O1,O2,O3,O4 default
 ```
 
 ## 🌿 Evolução Algorítmica
