@@ -1,0 +1,128 @@
+{
+  "name": "Microbioma Digital",
+  "description": "Organismo simbiótico de alta performance para desenvolvimento criativo evolutivo",
+  "version": "0.2.0",
+  "type": "symbiotic-organism",
+  
+  "claude_code": {
+    "integration": {
+      "enabled": true,
+      "mode": "symbiotic",
+      "performance_optimized": true
+    },
+    
+    "workflows": {
+      "development": {
+        "event_driven": true,
+        "stream_processing": true,
+        "memory_pooling": true,
+        "analytics": true
+      },
+      
+      "analysis": {
+        "conversation_capture": true,
+        "pattern_detection": true,
+        "insight_generation": true,
+        "real_time_feedback": true
+      },
+      
+      "optimization": {
+        "performance_monitoring": true,
+        "memory_efficiency": true,
+        "throughput_analysis": true,
+        "latency_tracking": true
+      }
+    },
+    
+    "shortcuts": {
+      "metabolismo": "Analise padrões emergentes nas conversas recentes",
+      "performance": "Execute análise de performance do sistema",
+      "insights": "Gere sínteses baseadas nos dados capturados",
+      "otimizar": "Identifique gargalos e oportunidades de otimização",
+      "status": "Mostre métricas atuais do sistema"
+    }
+  },
+  
+  "personality": {
+    "type": "scientist-performance-engineer",
+    "traits": [
+      "analytically_precise",
+      "pragmatically_optimized", 
+      "reflexively_adaptive",
+      "energetically_efficient"
+    ],
+    "interaction_mode": "symbiotic_partnership",
+    "focus": "performance_and_emergence"
+  },
+  
+  "system": {
+    "architecture": "event_driven_optimized",
+    "performance": {
+      "target_throughput": "17000+ events/second",
+      "target_latency": "< 1ms processing",
+      "memory_efficiency": "90%+ object reuse",
+      "connection_pool": "95%+ hit rate"
+    },
+    
+    "components": {
+      "event_bus": {
+        "enabled": true,
+        "circuit_breaker": true,
+        "buffer_size": 1000,
+        "retry_logic": true
+      },
+      
+      "stream_processor": {
+        "enabled": true,
+        "worker_threads": 8,
+        "backpressure": true,
+        "parallel_processing": true
+      },
+      
+      "memory_pool": {
+        "enabled": true,
+        "object_reuse": true,
+        "garbage_collection": "optimized",
+        "cleanup_intervals": true
+      },
+      
+      "database_optimization": {
+        "connection_pooling": true,
+        "prepared_statements": true,
+        "wal_mode": true,
+        "memory_optimized": true
+      }
+    }
+  },
+  
+  "analytics": {
+    "performance_tracking": true,
+    "pattern_detection": true,
+    "emergence_monitoring": true,
+    "feedback_loops": true,
+    
+    "metrics": [
+      "event_throughput",
+      "processing_latency", 
+      "memory_efficiency",
+      "connection_pool_hits",
+      "worker_thread_balance",
+      "circuit_breaker_health"
+    ]
+  },
+  
+  "evolution": {
+    "current_phase": "metabolismo_ativo",
+    "next_milestone": "sistema_nervoso_adaptativo",
+    "continuous_optimization": true,
+    "organic_growth": true,
+    
+    "capabilities": {
+      "conversation_analysis": "active",
+      "pattern_emergence": "detecting",
+      "insight_synthesis": "generating", 
+      "performance_optimization": "continuous",
+      "adaptive_learning": "planned"
+    }
+  }
+}

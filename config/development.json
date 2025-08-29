@@ -1,0 +1,105 @@
+{
+  "mode": "development",
+  "features": {
+    "hot_reload": true,
+    "auto_synthesis": true,
+    "pattern_detection": true,
+    "debug_mode": true,
+    "verbose_logging": true
+  },
+  "capture": {
+    "enabled": true,
+    "auto_capture": true,
+    "auto_process": true,
+    "capture_interval": 30000,
+    "process_interval": 15000,
+    "buffer_size": 100,
+    "max_message_length": 10000,
+    "enable_code_detection": true,
+    "enable_link_detection": true,
+    "enable_topic_detection": true,
+    "save_format": "json",
+    "compression": false,
+    "backup_enabled": true,
+    "backup_interval": 3600000
+  },
+  "processing": {
+    "real_time": true,
+    "batch_size": 10,
+    "priority_queue": true,
+    "error_handling": "graceful"
+  },
+  "metabolism": {
+    "auto_analysis": true,
+    "analysis_interval": 30000,
+    "batch_size": 10,
+    "enable_real_time": true,
+    "analysis_depth": "medium",
+    "enable_sentiment": true,
+    "enable_topic_detection": true,
+    "enable_pattern_recognition": true,
+    "min_pattern_confidence": 0.7,
+    "max_topics_per_conversation": 5,
+    "temporal_analysis_window": 86400000,
+    "enable_advanced_clustering": true
+  },
+  "synthesis": {
+    "auto_generate": true,
+    "trigger_conditions": [
+      "conversation_end",
+      "pattern_detected",
+      "insight_discovered",
+      "manual_request"
+    ],
+    "categories": [
+      "insights",
+      "patterns",
+      "decisions",
+      "learnings",
+      "questions"
+    ],
+    "format": "markdown",
+    "include_metadata": true,
+    "cross_references": true
+  },
+  "storage": {
+    "database": {
+      "type": "sqlite",
+      "path": "./data/development.db",
+      "backup_frequency": "5min",
+      "auto_optimize": true
+    },
+    "files": {
+      "markdown": "./docs/synthesis",
+      "json": "./data/raw",
+      "logs": "./logs",
+      "temp": "./temp"
+    }
+  },
+  "feedback": {
+    "real_time_suggestions": true,
+    "contextual_assistance": true,
+    "pattern_notifications": true,
+    "learning_feedback": true
+  },
+  "integration": {
+    "cursor": {
+      "enabled": true,
+      "rules_path": "./.cursor/rules",
+      "auto_reload": true,
+      "debug_mode": true
+    },
+    "git": {
+      "enabled": true,
+      "auto_commit": true,
+      "commit_message_template": "feat: {category} - {description}",
+      "branch_strategy": "feature"
+    }
+  },
+  "monitoring": {
+    "health_checks": true,
+    "performance_metrics": true,
+    "error_tracking": true,
+    "usage_analytics": true
+  }
+}

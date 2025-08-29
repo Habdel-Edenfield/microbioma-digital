@@ -1,0 +1,67 @@
+# Documentação Viva - Microbioma Digital
+
+## PRINCÍPIOS DE DOCUMENTAÇÃO
+- **Documentação viva > documentação perfeita**: Priorize evolução sobre perfeição
+- **Comentários que respiram**: Comentários devem evoluir com o código
+- **Contexto sobre detalhes**: Foque no "porquê" não apenas no "como"
+- **Status em tempo real**: Mantenha documentação atualizada com implementação
+
+## COMENTÁRIOS ORGÂNICOS
+```javascript
+// ❌ Comentário estático (não orgânico)
+// Função que soma dois números
+
+// ✅ Comentário vivo (orgânico)
+// Soma números - evoluiu de simples adição para validação de tipos
+// Contexto: Necessário para cálculos de microbioma (v1.2)
+```
+
+## ESTRUTURA DE DOCUMENTAÇÃO
+- **Histórico evolutivo**: Documente como o código evoluiu
+- **Contexto de mudanças**: Por que certas decisões foram tomadas
+- **Padrões emergentes**: Padrões que surgiram durante o desenvolvimento
+- **Feedback loops**: Como o sistema responde a mudanças
+- **Status de implementação**: O que está funcionando e o que está em desenvolvimento
+
+## DOCUMENTAÇÃO DO MICROBIOMA
+- **Estado do organismo**: Como o sistema está funcionando atualmente
+- **Evolução contínua**: Mudanças e adaptações recentes
+- **Simbiose**: Como diferentes partes trabalham juntas
+- **Insights emergentes**: Descobertas durante o desenvolvimento
+- **Sistema digestivo**: Status da captura e armazenamento de dados
+
+## EXEMPLOS DE DOCUMENTAÇÃO VIVA
+```markdown
+# Microbioma Digital - Estado Atual
+
+## Sistema Digestivo (v0.1.1) ✅ IMPLEMENTADO
+- ConversationLogger: Captura conversas com detecção de código/links/tópicos
+- DatabaseManager: Armazenamento SQLite com backup automático
+- CaptureManager: Coordenação de captura com filas de processamento
+- Sistema de buffer para eficiência na escrita
+
+## Metabolismo Informacional (v0.2.0) 🔄 EM DESENVOLVIMENTO
+- ConversationAnalyzer: Análise de conversas capturadas
+- Geração de insights e padrões emergentes
+- Sínteses automáticas de contexto
+
+## Próximos Passos
+- Implementar ConversationAnalyzer
+- Sistema de feedback e calibração
+```
+
+## MANUTENÇÃO ORGÂNICA
+- Atualize documentação sempre que o código evoluir
+- Mantenha histórico de mudanças e descobertas
+- Documente padrões emergentes e insights
+- Use documentação como feedback para o sistema
+- Mantenha status de implementação atualizado
+
+## STATUS ATUAL DO PROJETO
+- **✅ Sistema Digestivo**: Captura, buffer e armazenamento funcionando
+- **🔄 Metabolismo**: Análise e processamento em desenvolvimento
+- **⏳ Sistema Nervoso**: Feedback e calibração planejado
+description:
+globs:
+alwaysApply: true
+---

@@ -1,0 +1,52 @@
+# Desenvolvimento de Código Orgânico
+
+## ESTRUTURA DE CÓDIGO
+- **Ciclos de feedback**: Implemente loops de feedback em todas as funções principais
+- **Padrões emergentes**: Detecte e utilize padrões que surgem naturalmente no código
+- **Evolução incremental**: Código deve evoluir em pequenos passos orgânicos
+- **Simplicidade elegante**: Prefira soluções diretas sobre complexas
+
+## IMPLEMENTAÇÃO DO SISTEMA DIGESTIVO
+```javascript
+// Exemplo de implementação do sistema de captura
+class CaptureManager {
+  async startConversation(context) { /* Inicia nova conversa */ }
+  async addMessage(message, sender, type, metadata) { /* Adiciona mensagem */ }
+  async processQueue() { /* Processa fila de captura */ }
+  async endConversation() { /* Finaliza conversa */ }
+}
+```
+
+## METABOLISMO INFORMACIONAL (PRÓXIMO MILESTONE)
+- **Análise de conversas**: Processamento de mensagens capturadas
+- **Detecção de padrões**: Identificação de temas, código e links
+- **Geração de insights**: Sínteses automáticas de conversas
+- **Contexto evolutivo**: Memória de sessão e aprendizado
+
+## SISTEMA OTIMIZADO v0.2.0 (IMPLEMENTADO)
+- **EventBus**: Sistema de eventos com circuit breaker e buffer inteligente
+- **StreamProcessor**: 8 worker threads paralelos com backpressure handling
+- **MemoryPool**: Object pooling com 90% taxa de reuso
+- **DatabaseManagerOptimized**: Connection pooling SQLite + prepared statements
+
+## AMBIENTE SIMBIÓTICO
+- **IDE Consciente**: Integração com funcionalidades do editor
+- **Agente Adaptativo**: Sistema que aprende e evolui
+- **Projeto Vivo**: Código que responde ao contexto
+- **Contexto Evolutivo**: Memória e aprendizado contínuo
+
+## EFEITO BORBOleta
+- **Keystroke**: Pequenas ações do desenvolvedor
+- **Micro Contexto**: Contexto imediato da ação
+- **Cascata Cognitiva**: Efeitos em cascata no sistema
+- **Reorganização Emergente**: Sistema se reorganiza organicamente
+- **Novo Equilíbrio**: Estado estabilizado após mudanças
+
+## STATUS DE IMPLEMENTAÇÃO v0.2.0
+- **✅ Sistema Digestivo Otimizado**: Event-driven + Stream + Memory Pool + Connection Pool
+- **🔄 Metabolismo Ativo**: 17,525 eventos/s processamento paralelo em tempo real
+- **⏳ Sistema Nervoso Adaptativo**: Feedback loops + Auto-calibração + Preditivo
+description:
+globs:
+alwaysApply: true
+---

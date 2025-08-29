@@ -1,0 +1,42 @@
+# Microbioma Digital - Regras Fundamentais
+
+## FILOSOFIA ORGÂNICA
+Este projeto opera como um organismo digital vivo, não como um sistema tradicional. Todas as decisões de código devem refletir:
+
+- **Fluxo sobre precisão**: Mantenha o desenvolvedor no estado de flow
+- **Evolução contínua**: Código deve evoluir organicamente
+- **Simbiose**: Integração harmoniosa entre IDE, agente e projeto
+- **Simplicidade sobre complexidade**: Soluções elegantes e diretas
+
+## PRINCÍPIOS DE CÓDIGO
+- **Documentação viva**: Comentários que evoluem com o código
+- **Feedback loops**: Implemente ciclos de feedback em todas as funcionalidades
+- **Padrões emergentes**: Detecte e utilize padrões que surgem naturalmente
+- **Metabolismo informacional**: Processamento eficiente de dados e contexto
+- **Captura orgânica**: Sistema de ingestão de informação sem fricção
+
+## ARQUITETURA OTIMIZADA v0.2.0
+Sistema event-driven de alta performance:
+
+1. **✅ Sistema Digestivo Otimizado**: Event → Stream → Pool → Connection → Storage
+2. **🔄 Metabolismo Informacional Ativo**: Analysis → Patterns → Insights → Streaming
+3. **⏳ Sistema Nervoso**: Adaptive Feedback → Auto-calibração → Evolução Preditiva
+4. **Ambiente Simbiótico**: Claude Code + Event-Driven + Performance Analytics
+
+## STATUS ATUAL DO PROJETO v0.2.0
+- **✅ Event-Driven Architecture**: EventBus com circuit breaker e buffer otimizado
+- **✅ Stream Processing**: Worker threads paralelos com backpressure handling
+- **✅ Memory Management**: Object pooling com 90% taxa de reuso
+- **✅ Database Optimization**: Connection pooling SQLite + prepared statements
+- **✅ Native Replacements**: 75% redução bundle size via APIs nativas
+- **🔄 Metabolismo Ativo**: 17,525 eventos/s processamento em tempo real
+- **⏳ Próximo Milestone**: Sistema Nervoso adaptativo com feedback loops
+
+## REFERÊNCIAS ESSENCIAIS
+- [instrucao_agente_microbioma.md](mdc:instrucao_agente_microbioma.md) - DNA operacional do projeto
+- [microbioma_digital.mermaid](mdc:microbioma_digital.mermaid) - Arquitetura do sistema
+- [personalidade-simbiotica.mdc](mdc:personalidade-simbiotica.mdc) - Personalidade do agente simbiótico
+description:
+globs:
+alwaysApply: true
+---

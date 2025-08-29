@@ -1,0 +1,58 @@
+{
+  "pattern_categories": {
+    "development": {
+      "description": "Padrões relacionados ao desenvolvimento de código",
+      "examples": [
+        "naming-conventions",
+        "code-structure",
+        "error-handling",
+        "testing-patterns"
+      ]
+    },
+    "architecture": {
+      "description": "Padrões de design e arquitetura",
+      "examples": [
+        "component-design",
+        "data-flow",
+        "state-management",
+        "api-design"
+      ]
+    },
+    "workflow": {
+      "description": "Padrões de fluxo de trabalho",
+      "examples": [
+        "debugging-sequences",
+        "refactoring-steps",
+        "problem-solving",
+        "learning-patterns"
+      ]
+    },
+    "communication": {
+      "description": "Padrões de comunicação e documentação",
+      "examples": [
+        "question-formats",
+        "explanation-styles",
+        "feedback-patterns",
+        "knowledge-sharing"
+      ]
+    }
+  },
+  "detection_rules": {
+    "frequency_threshold": 3,
+    "similarity_threshold": 0.8,
+    "context_window": 100,
+    "learning_rate": 0.1
+  },
+  "synthesis_rules": {
+    "auto_generate": true,
+    "categorization": "intelligent",
+    "cross_reference": true,
+    "evolution_tracking": true
+  },
+  "feedback_loops": {
+    "pattern_validation": true,
+    "user_confirmation": true,
+    "continuous_refinement": true,
+    "knowledge_expansion": true
+  }
+}

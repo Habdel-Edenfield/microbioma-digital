@@ -1,0 +1,52 @@
+{
+  "name": "microbioma-digital",
+  "version": "0.2.0",
+  "description": "Organismo simbiótico de alta performance para desenvolvimento criativo evolutivo",
+  "main": "src/index-optimized.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index-optimized.js",
+    "dev:optimized": "node src/index-optimized.js --performance",
+    "dev:legacy": "node src/index.js",
+    "analysis": "node scripts/final-analysis.js",
+    "analysis:detailed": "node scripts/final-analysis.js --detailed",
+    "analysis:benchmark": "node scripts/final-analysis.js --benchmark",
+    "performance": "npm run analysis:benchmark",
+    "test": "npm run analysis",
+    "test:mary": "node scripts/quick-mary-test.js",
+    "mary:analysis": "node scripts/mary-complete-test.js",
+    "mary:validate": "node scripts/mary-final-validation.js",
+    "mary:intelligence": "node scripts/test-mary-analyzer.js",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "microbioma",
+    "event-driven",
+    "stream-processing", 
+    "high-performance",
+    "memory-pooling",
+    "connection-pooling",
+    "worker-threads",
+    "claude-code",
+    "symbiotic-ai",
+    "organic-development",
+    "mary-neural-system",
+    "strategic-intelligence",
+    "cross-project-learning",
+    "adaptive-feedback",
+    "neural-integration",
+    "conversation-analysis",
+    "pattern-recognition"
+  ],
+  "author": "Microbioma Digital Team",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "mode": "test",
+  "features": {
+    "hot_reload": false,
+    "auto_synthesis": false,
+    "pattern_detection": true,
+    "debug_mode": true,
+    "verbose_logging": true
+  },
+  "capture": {
+    "conversations": {
+      "enabled": true,
+      "format": "json",
+      "include_metadata": true,
+      "auto_categorize": false
+    },
+    "ide_events": {
+      "enabled": false,
+      "track_file_opens": false,
+      "track_edits": false,
+      "track_debugging": false,
+      "track_git_activity": false
+    },
+    "behavior_patterns": {
+      "enabled": true,
+      "track_typing_patterns": false,
+      "track_error_patterns": true,
+      "track_success_patterns": true,
+      "track_learning_patterns": false
+    }
+  },
+  "processing": {
+    "real_time": false,
+    "batch_size": 1,
+    "priority_queue": false,
+    "error_handling": "strict"
+  },
+  "synthesis": {
+    "auto_generate": false,
+    "trigger_conditions": [
+      "manual_request"
+    ],
+    "categories": [
+      "test_results",
+      "test_patterns",
+      "test_insights"
+    ],
+    "format": "markdown",
+    "include_metadata": true,
+    "cross_references": false
+  },
+  "storage": {
+    "database": {
+      "type": "sqlite",
+      "path": "./data/test.db",
+      "backup_frequency": "never",
+      "auto_optimize": false
+    },
+    "files": {
+      "markdown": "./docs/test_synthesis",
+      "json": "./data/test_raw",
+      "logs": "./logs/test",
+      "temp": "./temp/test"
+    }
+  },
+  "feedback": {
+    "real_time_suggestions": false,
+    "contextual_assistance": false,
+    "pattern_notifications": false,
+    "learning_feedback": false
+  },
+  "integration": {
+    "cursor": {
+      "enabled": false,
+      "rules_path": "./.cursor/rules",
+      "auto_reload": false,
+      "debug_mode": false
+    },
+    "git": {
+      "enabled": false,
+      "auto_commit": false,
+      "commit_message_template": "",
+      "branch_strategy": "none"
+    }
+  },
+  "monitoring": {
+    "health_checks": false,
+    "performance_metrics": false,
+    "error_tracking": true,
+    "usage_analytics": false
+  },
+  "test": {
+    "mock_data": true,
+    "isolated_environment": true,
+    "cleanup_after_test": true,
+    "parallel_execution": false
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "mode": "production",
+  "features": {
+    "hot_reload": false,
+    "auto_synthesis": true,
+    "pattern_detection": true,
+    "debug_mode": false,
+    "verbose_logging": false
+  },
+  "capture": {
+    "conversations": {
+      "enabled": true,
+      "format": "json",
+      "include_metadata": true,
+      "auto_categorize": true
+    },
+    "ide_events": {
+      "enabled": true,
+      "track_file_opens": false,
+      "track_edits": true,
+      "track_debugging": false,
+      "track_git_activity": true
+    },
+    "behavior_patterns": {
+      "enabled": true,
+      "track_typing_patterns": false,
+      "track_error_patterns": true,
+      "track_success_patterns": true,
+      "track_learning_patterns": true
+    }
+  },
+  "processing": {
+    "real_time": false,
+    "batch_size": 50,
+    "priority_queue": true,
+    "error_handling": "robust"
+  },
+  "synthesis": {
+    "auto_generate": true,
+    "trigger_conditions": [
+      "conversation_end",
+      "pattern_detected",
+      "insight_discovered"
+    ],
+    "categories": [
+      "insights",
+      "patterns",
+      "decisions",
+      "learnings"
+    ],
+    "format": "markdown",
+    "include_metadata": true,
+    "cross_references": true
+  },
+  "storage": {
+    "database": {
+      "type": "sqlite",
+      "path": "./data/production.db",
+      "backup_frequency": "1hour",
+      "auto_optimize": true
+    },
+    "files": {
+      "markdown": "./docs/synthesis",
+      "json": "./data/raw",
+      "logs": "./logs",
+      "temp": "./temp"
+    }
+  },
+  "feedback": {
+    "real_time_suggestions": false,
+    "contextual_assistance": true,
+    "pattern_notifications": true,
+    "learning_feedback": true
+  },
+  "integration": {
+    "cursor": {
+      "enabled": true,
+      "rules_path": "./.cursor/rules",
+      "auto_reload": false,
+      "debug_mode": false
+    },
+    "git": {
+      "enabled": true,
+      "auto_commit": true,
+      "commit_message_template": "feat: {category} - {description}",
+      "branch_strategy": "main"
+    }
+  },
+  "monitoring": {
+    "health_checks": true,
+    "performance_metrics": true,
+    "error_tracking": true,
+    "usage_analytics": false
+  },
+  "security": {
+    "data_encryption": true,
+    "access_control": true,
+    "audit_logging": true,
+    "backup_encryption": true
+  },
+  "performance": {
+    "cache_enabled": true,
+    "cache_ttl": "1hour",
+    "compression": true,
+    "optimization": true
+  }
+}

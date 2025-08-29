@@ -1,0 +1,58 @@
+{
+  "development": {
+    "debug": true,
+    "log_level": "verbose",
+    "auto_save": true,
+    "backup_frequency": "5min"
+  },
+  "production": {
+    "debug": false,
+    "log_level": "error",
+    "auto_save": true,
+    "backup_frequency": "1hour"
+  },
+  "paths": {
+    "data": "./data",
+    "docs": "./docs",
+    "logs": "./logs",
+    "temp": "./temp",
+    "backups": "./backups"
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "./data/microbioma.db",
+    "backup_path": "./backups/database",
+    "auto_backup": true
+  },
+  "logging": {
+    "file": "./logs/microbioma.log",
+    "max_size": "10MB",
+    "max_files": 5,
+    "format": "json"
+  },
+  "capture": {
+    "conversations": true,
+    "ide_events": true,
+    "behavior_patterns": true,
+    "file_changes": true,
+    "git_activity": true
+  },
+  "synthesis": {
+    "auto_generate": true,
+    "frequency": "after_conversation",
+    "categories": ["insights", "patterns", "decisions"],
+    "format": "markdown"
+  },
+  "integration": {
+    "cursor": {
+      "enabled": true,
+      "rules_path": "./.cursor/rules",
+      "auto_reload": true
+    },
+    "git": {
+      "enabled": true,
+      "auto_commit": true,
+      "commit_message": "feat: síntese automática do microbioma"
+    }
+  }
+}
