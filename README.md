@@ -335,29 +335,40 @@ sequenceDiagram
 ### Complete Performance Pipeline
 
 ```mermaid
-flowchart TD
+graph TD
     subgraph "Input Layer"
         I1[User Conversation] --> I2[Context Data]
         I3[Project Metadata] --> I4[Historical Data]
     end
     
-    subgraph "Event Processing Layer - 17,525 events/s"
-        E1[EventBus<br/>Buffer: 1000<br/>Circuit Breaker] --> E2[StreamProcessor<br/>8 Workers<br/>Backpressure]
+    subgraph "Event Processing Layer"
+        E1[EventBus<br/>Buffer: 1000 / Circuit Breaker] --> E2[StreamProcessor<br/>8 Workers / Backpressure]
         E2 --> E3[MemoryPool<br/>90% Reuse Rate]
     end
     
-    subgraph "Mary's Intelligence Layer"
-        M1[ConversationAnalyzer<br/>🧠 <1ms Analysis] --> M2[CrossProjectLearning<br/>🔄 70% Pattern Match]
-        M2 --> M3[AdaptiveFeedback<br/>🎯 Real-time Adaptation]
-        M3 --> M4[IntelligenceHub<br/>⚡ Multi-layer Synthesis]
+    subgraph "Spore's Intelligence Layer"
+        M1[ConversationAnalyzer<br/>🧠 <1ms Analysis]
+        M2[CrossProjectLearning<br/>🔄 70% Pattern Match]
+        M3[AdaptiveFeedback<br/>🎯 Real-time Adaptation]
+        M4[IntelligenceHub<br/>⚡ Multi-layer Synthesis]
+        
+        M1 --> M2
+        M2 --> M3
+        M3 --> M4
     end
     
     subgraph "Output Layer"
-        O1[Strategic Insights] --> O2[Unified Recommendations]
-        O2 --> O3[Adaptive Next Steps]
-        O3 --> O4[Performance Metrics]
+        O1[Strategic Insights]
+        O2[Unified Recommendations]
+        O3[Adaptive Next Steps]
+        O4[Performance Metrics]
+        
+        O1 --> O2
+        O2 --> O3
+        O3 --> O4
     end
     
+    %% Conexões entre camadas
     I1 --> E1
     I2 --> E1
     I3 --> E1
@@ -365,12 +376,6 @@ flowchart TD
     
     E3 --> M1
     M4 --> O1
-    
-    %% 🔵 Definição única de estilo
-    classDef default fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    
-    %% 🔵 Aplica para todos
-    class I1,I2,I3,I4,E1,E2,E3,M1,M2,M3,M4,O1,O2,O3,O4 default
 ```
 
 ## 🌿 Evolução Algorítmica
